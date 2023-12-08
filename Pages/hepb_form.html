@@ -16,7 +16,7 @@
     <nav class="topnav">
         <ul>
          <li><a href="#">Home</a></li>
-         <li><a href="#">Logout</a></li>
+         <li><a href="../index.html">Logout</a></li>
          <li style="float: left;"><a href="registration.html">Register Here</a></li> 
         </ul> 
     </nav>
@@ -32,32 +32,31 @@
             <li><a href="riskfactors.html">Risk Factor Information</a></li>
             <li><a href="cong_syphilis.html">Congenital Syphilis Form</a></li>
             <li><a href="chlamydia_gonorrhea.html">Chlamydia & Gonorrhea Case Reporting Form</a></li>
-            <li><a href="../index.html">Login Page</a></li>
+            <li><a href="../index.html">Logout</a></li>
            </ul> 
     </nav>
 
     <article class="col-s-9">
+
         <form  method="post" action="Pages/registration.html" autocomplete="off">
 
         <h2>Hepatitis B Infected Pregnant Woman Reporting Form</h2>
             <h3 style= "background-color: #006600; color: #ffffff; font-style: italic;" colspan="5">Confidential Case Report</h3>
-                
-                    <form  method="post" action="Pages/registration.html" autocomplete="off">
 
-                            <label for="firstname">First Name:</label>
-                            <input id="firstname" name="firstname" type="text" maxlength="10" required/>&nbsp &nbsp 
-                            
-                            <label for="lastname">Last Name:</label>
-                            <input id="lastname" name="lastname" type="text" required/>&nbsp &nbsp 
+                        <label for="firstname">First Name:</label>
+                        <input id="firstname" name="firstname" type="text" maxlength="10" required/>&nbsp &nbsp 
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input id="lastname" name="lastname" type="text" required/>&nbsp &nbsp 
 
                         <label for="middlename">Middle Name:</label>
-                        <input id="middlename" name="middlename" type="text"/>&nbsp &nbsp<br><br>
+                        <input id="middlename" name="middlename" type="text" placeholder="optional"/>&nbsp &nbsp<br><br>
                         
                         <label for="dob">Date of Birth:</label>
-                        <input type="dob" id="dob" name="dob" required/>&nbsp&nbsp
+                        <input type="date" id="dod" name="date" required/>&nbsp&nbsp
 
                         <label for="edd">Estimated Delivery Date:&nbsp</label>
-                        <input type="edd" id="edd" name="edd" required/>&nbsp&nbsp
+                        <input type="date" id="edd" name="date" required/>&nbsp&nbsp
 
                             
                             <label for="status">
@@ -67,10 +66,14 @@
                             <input type="radio" name="status" value="status" id="status"/>Unk<br><br>
 
 
-                            Address:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                            City:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                            State:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                            Zip:&nbsp<input type="string" class="input"><br><br>
+                            <label for="address">Address:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="city">City:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="state">State:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="zip">Zip:</label>&nbsp
+                        <input type="string" class="input"><br><br>
 
                         <label for="tel">Telephone Number:</label>
                         <input id="tel" name="tel" type="tel" placeholder="123-1234-1234">&nbsp &nbsp &nbsp &nbsp
@@ -96,15 +99,18 @@
                         <input type="radio" value="race" name="race"/>No
                         <input type="radio" value="race" name="race"/>Unk &nbsp&nbsp&nbsp
 
-                        Country of Birth:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                        Primary Language:&nbsp<input type="string" class="input"><br><br>Check if Interpreter Needed:<input type="checkbox" value="" name="interpreter"/><br><br>
+                        <label for="country">Country of Birth:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="language">Primary Language:</label>&nbsp
+                        <input type="string" class="input"><br><br>
+                        Check if Interpreter Needed:<input type="checkbox" value="" name="interpreter"/><br><br>
     
             <h3 style= "background-color: #006600; color: #ffffff;" colspan="5">LABORATORY INFORMATION</h3> 
             
-                        <label for="results">Laboratory Results: Check off below any POSITIVE labs and attach positive Hep B lab results</label><br><br>
-                        <input type="radio" value="results" name="results"/>HBsAg (Hep B surface antigen)
-                        <input type="radio" value="results" name="results"/>IgM anti-HBc (IgM antibody to Hep B core antigen)<br><br>
-                        <input type="radio" value="results" name="results"/>HBeAg (Hep Be antigen)
+                        <label for="results">Laboratory Results: Check off below any POSITIVE labs <u>and</u> attach positive Hep B lab results</label><br><br>
+                        <input type="radio" value="results" name="results"/>HBsAg (Hep B surface antigen)&nbsp&nbsp
+                        <input type="radio" value="results" name="results"/>IgM anti-HBc (IgM antibody to Hep B core antigen)&nbsp&nbsp
+                        <input type="radio" value="results" name="results"/>HBeAg (Hep Be antigen)<br><br>
                         <input type="radio" value="results" name="results"/>HBV DNA (Hep B virus DNA)
 
             <h3 style= "background-color: #006600; color: #ffffff;" colspan="5">CLINICAL INFORMATION</h3> 
@@ -114,17 +120,24 @@
                         <input type="radio" value="provider" name="provider"/>CNM/NP
                         <input type="radio" value="provider" name="provider"/>PA<br><br>
 
-                        <label for="firstname">OB Provider Last Name:</label>
-                            <input id="firstname" name="firstname" type="text" maxlength="10" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
-                            <label for="firstname">OB Provider First Name:</label>
-                            <input id="firstname" name="firstname" type="text" maxlength="10" required/><br><br>
-                        Expected Delivery Facility:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                        Reporting Health Care Facility:&nbsp<input type="string" class="input"><br><br>
-                        Address:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                        City:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                        State:&nbsp<input type="string" class="input">&nbsp&nbsp&nbsp
-                        Zip:&nbsp<input type="string" class="input"><br><br>
-                        Contact Person at Reporting Facility:&nbsp<input type="string" class="input"><br><br>
+                        <label for="lastname">OB Provider Last Name:</label>
+                        <input id="lastname" name="lastname" type="text" maxlength="10" required/>&nbsp &nbsp&nbsp&nbsp&nbsp
+                        <label for="firstname">OB Provider First Name:</label>
+                        <input id="firstname" name="firstname" type="text" maxlength="10" required/><br><br>
+                        <label for="facility">Expected Delivery Facility:</label>&nbsp
+                        <input type="string" class="input">&nbsp&nbsp&nbsp
+                        <label for="facility">Reporting Health Care Facility:&nbsp</label>&nbsp
+                        <input type="string" class="input" required><br><br>
+                        <label for="address">Address:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="city">City:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="state">State:</label>&nbsp
+                        <input type="string" class="input" required>&nbsp&nbsp&nbsp
+                        <label for="zip">Zip:</label>&nbsp
+                        <input type="string" class="input"><br><br>
+                        <label for="contact_person">Contact Person at Reporting Facility:</label>&nbsp
+                        <input type="string" class="input" required><br><br>
 
                         <label for="tel">Direct Phone:</label>
                         <input id="tel" name="tel" type="tel" placeholder="(123)123-1234 *1234">&nbsp &nbsp&nbsp&nbsp&nbsp
@@ -134,9 +147,9 @@
 
                         <p style="text-align: center;"><input type="submit" value="Submit"></p>
                         
-                    </form>
+            </form>
                 
-            </article>
+        </article>
                 
  </section>
 
