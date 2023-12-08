@@ -7,6 +7,7 @@
     <meta name="descrition" content="Dynamic Web Development">
     <meta name="keywords" content="HTML 5, CSS3, JavaScript">
     <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <title>Index Page</title>
     <style>
 
@@ -22,6 +23,7 @@
         <nav class="topnav">
             <ul>
              <li><a href="#">Home</a></li>
+             <li><a href="#">Sign-Up</a></li>
             </ul> 
         </nav>
     </header>
@@ -31,11 +33,12 @@
             <form method="post" action="Pages/registration.html" autocomplete="off">
                 <h3>Login</h3>
                 <label for="email">Email Address</label><br>
-                <input type="text" name="email" id="email"><br><br>
+                <input type="email" name="email" id="email" placeholder="Bob@gmail.com" required autocomplete="on"><br><br>
                 <label for="pass">Password</label><br>
-                <input type="password" name="password" id="pass"><br><br>
+                <input type="password" name="password" id="pass" minlength="4" maxlength="10" required inputmode="numeric" placeholder="********">
+                <br><br>
                 <input type="submit" name="submit" value="Login"><br><br>
-                Forgot Your Password? <a href="à">Click Here</a>
+                Forgot Your Password? <a href="#">Click Here</a>
             </form>
         </div>
     
