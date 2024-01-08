@@ -138,6 +138,7 @@ section nav li{
     background-color: #006400;
     font-weight: bold;
     font-size: large;
+    text-shadow: #000000 1px 1px 1px;
     box-shadow: #000000 3px 3px 3px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -153,7 +154,7 @@ article{
     position: relative;
     top: 75px;
     box-shadow: #000000 3px 3px 3px 2px;
-    text-shadow: #000000 1px 1px 1px;
+    text-shadow: #000000 0.5px 0.5px 0.5px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }

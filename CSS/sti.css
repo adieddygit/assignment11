@@ -125,47 +125,47 @@ section a{
 section nav li{
     position: relative;
     top: 50px;
-    left:-11%;
+    left:-23%;
     margin: 40px;
     padding: 5px;
     margin-bottom: 5px;
     background-color: #006400;
     font-weight: bold;
     font-size: large;
+    text-shadow: #000000 1px 1px 1px;
     box-shadow: #000000 3px 3px 3px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    
-    
 }
   
 section nav li:hover{
     background-color: gray;
 }
 
-article{
+table{
+    border-collapse: collapse;
     position: relative;
     top: 75px;
     box-shadow: #000000 3px 3px 3px 2px;
-    text-shadow: #000000 1px 1px 1px;
+    text-shadow: #000000 0.5px 0.5px 0.5px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
-
-table{
-   border-collapse: collapse;
-}
-
+   
 th, td{
     border: 2px solid #006400;
     margin: 2px;
     padding: 5px;
-    color: #006400;
-    
+    color: #006400;   
 }
 
+#p1{
+    font-size: 14px;
+    color: #006400;
+    text-shadow: #000000 0.5px 0.5px 0.5px;
+    float: right;
+}
 
-div{
-    border: 1px solid #006400;
+span{
+    color: red;
 }
