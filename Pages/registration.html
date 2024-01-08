@@ -28,7 +28,7 @@
 <section class="row">
     <nav class="col-s-3">
         <ul>
-            <li><a href="personalinfo.html">Personal Information</a></li>
+            <li><a href="personalinfo.html" target="_blank">Personal Information</a></li>
             <li><a href="riskfactors.html">Risk Factor Information</a></li>
             <li><a href="hepb_form.html">Hepatitis B Pregnant Women Reporting Form</a></li>
             <li><a href="cong_syphilis.html">Congenital Syphilis Form</a></li>
@@ -41,7 +41,11 @@
         <form  method="post" name="register" onsubmit="return validateregister();" autocomplete="off">
                 <label for="firstname">
                     First Name:</label>
+<<<<<<< HEAD
                 <input id="firstname" name="firstname" type="text" onblur="return validatefirstname();"/><span id="firstnameErr"></span>&nbsp &nbsp 
+=======
+                <input id="firstname" name="firstname" type="text" required/>&nbsp &nbsp 
+>>>>>>> origin
                 <label for="middlename">
                     Middle Name:</label>
                 <input id="middlename" name="middlename" type="text" placeholder="optional"/>&nbsp &nbsp 
@@ -50,7 +54,11 @@
                 <input id="lastname" name="lastname" type="text"/><br><br>&nbsp &nbsp 
                 <label for="uniqueid">
                     Unique ID:</label>
+<<<<<<< HEAD
                     <input type="CDC-***********" name="uniqueid" id="pass" maxlength="17" inputmode="numeric" placeholder="CDC-1234567890-MM">&nbsp &nbsp 
+=======
+                    <input type="CDC-***********" name="uniqueid" id="pass" maxlength="17" required inputmode="numeric" placeholder="CDC-1234567890-MM">&nbsp &nbsp 
+>>>>>>> origin
                 <label for="sex">
                     Sex:</label>
                 <input type="radio" name="sex" value="female" id="sex"/>Female
